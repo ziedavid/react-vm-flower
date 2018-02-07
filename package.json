@@ -28,10 +28,12 @@
     "coffee-script": "^1.12.5",
     "coffeelint": "^1.16.0",
     "mocha": "^3.2.0",
-    "react-dom": "^15.5.4"
+    "react-dom": "^16.2.0"
   },
   "dependencies": {
-    "react": "^15.5.4",
+    "create-react-class": "^15.6.3",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
     "react-pure-render": "^1.0.2"
   }
 }

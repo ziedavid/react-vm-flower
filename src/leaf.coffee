@@ -4,6 +4,9 @@ Copyright (c) 2015 - 2017 Markus Kohlhase <mail@markus-kohlhase.de>
 ###
 
 React     = require "react"
+ReactDOM  = require "react-dom"
+T         = require "prop-types"
+createReactClass = require "create-react-class"
 PureMixin = require "react-pure-render/mixin"
 
 leafShape = (w, h) ->
@@ -45,11 +48,9 @@ leafShape = (w, h) ->
   # close the path
   "#{P0.x},#{P0.y} #{P0.x},#{P0.y} Z"
 
-{ path } = React.DOM
+{ path } = ReactDOM
 
-T = React.PropTypes
-
-module.exports = React.createClass
+module.exports = createReactClass
 
   displayName: "Leaf"
 

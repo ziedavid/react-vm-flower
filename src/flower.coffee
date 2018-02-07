@@ -4,10 +4,13 @@ Copyright (c) 2015 - 2017 Markus Kohlhase <mail@markus-kohlhase.de>
 ###
 
 React     = require "react"
+ReactDOM  = require "react-dom"
+T         = require "prop-types"
+createReactClass = require "create-react-class"
 Leaf      = require "./leaf"
 PureMixin = require "react-pure-render/mixin"
 
-{ g, path } = React.DOM
+{ g, path } = ReactDOM
 
 COLORS = [
   '#96bf0c' # GREEN
@@ -24,7 +27,7 @@ rad = (deg) -> deg * Math.PI / 180
 
 T = React.PropTypes
 
-module.exports = React.createClass
+module.exports = createReactClass
 
   displayName: "Flower"
 
