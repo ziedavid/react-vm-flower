@@ -25,8 +25,6 @@ ANGLE = 60
 
 rad = (deg) -> deg * Math.PI / 180
 
-T = React.PropTypes
-
 module.exports = createReactClass
 
   displayName: "Flower"
